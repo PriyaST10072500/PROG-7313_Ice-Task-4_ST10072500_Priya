@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <SeekBar
+        android:id="@+id/progressSeekBar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:max="10"
+        android:progress="0"
+        android:progressDrawable="@drawable/custom_seekbar"
+        android:thumb="@null"
+        android:clickable="false"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/countLabel"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/countLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/count_label"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.064"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/questionLabel"
+        android:layout_width="350dp"
+        android:layout_height="166dp"
+        android:text="@string/question_label"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.21" />
+
+    <Button
+        android:id="@+id/answerBtn1"
+        android:layout_width="273dp"
+        android:layout_height="67dp"
+        android:backgroundTint="#95c8d8"
+        android:onClick="checkAnswer"
+        android:text="@string/btn_answer"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.572" />
+
+    <Button
+        android:id="@+id/answerBtn2"
+        android:layout_width="273dp"
+        android:layout_height="67dp"
+        android:backgroundTint="#95c8d8"
+        android:onClick="checkAnswer"
+        android:text="@string/btn_answer"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45"
+
+        />
+
+    <Button
+        android:id="@+id/answerBtn3"
+        android:layout_width="273dp"
+        android:layout_height="67dp"
+        android:backgroundTint="#95c8d8"
+        android:onClick="checkAnswer"
+        android:text="@string/btn_answer"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.694" />
+
+    <Button
+        android:id="@+id/answerBtn4"
+        android:layout_width="273dp"
+        android:layout_height="67dp"
+        android:backgroundTint="#95c8d8"
+        android:onClick="checkAnswer"
+        android:text="@string/btn_answer"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.813" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
